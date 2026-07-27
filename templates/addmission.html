@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission Form - Lucky Coaching Centre</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>Admission Form</h2>
+
+<form action="/admission" method="POST">
+    <label>Student Name</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Father's Name</label><br>
+    <input type="text" name="father" required><br><br>
+
+    <label>Mother's Name</label><br>
+    <input type="text" name="mother" required><br><br>
+
+    <label>Class</label><br>
+    <input type="text" name="student_class" required><br><br>
+
+    <label>Mobile Number</label><br>
+    <input type="tel" name="mobile" required><br><br>
+
+    <label>Address</label><br>
+    <textarea name="address" required></textarea><br><br>
+
+    <input type="submit" value="Submit Admission Form">
+
+</form>
+
+</body>
+</html>
